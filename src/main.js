@@ -1,4 +1,6 @@
-const renderElement = (container, layout, position = "beforeend") => {
+'use strict';
+
+const renderElement = (container, layout, position = `beforeend`) => {
   container.insertAdjacentHTML(position, layout);
 };
 
