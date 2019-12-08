@@ -1,4 +1,5 @@
-import {getCardLayout, getCardEditLayout} from './cards';
+import {getCardLayout, getCardEditLayout} from './card';
+import {getLoadMoreBtnLayout} from './button';
 
 const getTasksListLayout = () => `
 <section class="board container">
@@ -16,10 +17,6 @@ const getTasksListLayout = () => `
   </div>
   ${getLoadMoreBtnLayout()}
 </section>
-`;
-
-const getLoadMoreBtnLayout = () => `
-<button class="load-more" type="button">load more</button>
 `;
 
 export {getTasksListLayout};
